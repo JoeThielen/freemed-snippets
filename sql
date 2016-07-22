@@ -1,4 +1,4 @@
-$sql="SELECT * FROM fy_con";
+$sql = "SELECT * FROM fy_con";
 fy2_sql_exec($sql, "result_set_X", "rows_X");
 
 if ($rows_X > 0)
