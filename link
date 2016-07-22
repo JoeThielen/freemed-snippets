@@ -1,0 +1,1 @@
+$fy_x = fy2_html_link($fy_link, $fy_linkdescr, $fy_linktarget="", $fy_append="");

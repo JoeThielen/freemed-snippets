@@ -1,0 +1,2 @@
+# You may add "_BLANK" after "TEXT" to specify TARGET.
+fy2_html_winlink("CENTER","2","LINK", "TEXT");

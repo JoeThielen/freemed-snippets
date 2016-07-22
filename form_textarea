@@ -1,0 +1,11 @@
+# FORM TEXTAREA 
+$fy2_ft_title="";
+$fy2_ft_title_split=1;
+$fy2_ft_title_align="RIGHT";
+$fy2_ft_input_align="LEFT";
+$fy2_ft_name="gr_";
+$fy2_ft_rows=5;
+$fy2_ft_cols=40;
+$fy2_ft_wrap="SOFT";
+$fy2_ft_default_value="";
+fy2_form_textarea($fy2_ft_title, $fy2_ft_title_split, $fy2_ft_title_align, $fy2_ft_input_align, $fy2_ft_name, $fy2_ft_rows, $fy2_ft_cols, $fy2_ft_wrap, $fy2_ft_default_value);

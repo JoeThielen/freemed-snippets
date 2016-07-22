@@ -1,0 +1,11 @@
+# FORM INPUT
+$fy2_fi_title="";
+$fy2_fi_title_split=1;
+$fy2_fi_title_align="RIGHT";
+$fy2_fi_input_align="LEFT";
+$fy2_fi_name="gr_";
+$fy2_fi_type="INPUT";
+$fy2_fi_size=11;
+$fy2_fi_maxlength=11;
+$fy2_fi_default_value="";
+fy2_form_input($fy2_fi_title, $fy2_fi_title_split, $fy2_fi_title_align, $fy2_fi_input_align, $fy2_fi_name, $fy2_fi_type, $fy2_fi_size, $fy2_fi_maxlength, $fy2_fi_default_value);

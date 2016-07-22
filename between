@@ -1,0 +1,6 @@
+# $fy_units Indicates the measurement unit to return data in (years, days, hours, minutes, or seconds).
+# $fy_date1 The first date in MM/DD/YYYY format.
+# $fy_time1 The first time in HH:MM or HH:MM:SS format.
+# $fy_date2 The second date in MM/DD/YYYY format.
+# $fy_time2 The second time in HH:MM or HH:MM:SS format.
+$fy_x = fy_unitsbetweendates($fy_units, $fy_date1, $fy_time1, $fy_date2, $fy_time2);

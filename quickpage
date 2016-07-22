@@ -1,0 +1,7 @@
+# FMYiRC QUICKPAGE DISPLAY
+$fy2_hq_title=$fy_title;
+$fy2_hq_message="";
+$fy2_hq_back="";
+$fy2_hq_meta="";
+$fy2_hq_meta_length=0;
+fy2_html_quickpage($fy2_hq_title, $fy2_hq_message, $fy2_hq_back, $fy2_hq_meta, $fy2_hq_meta_length);

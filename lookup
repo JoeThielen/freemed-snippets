@@ -1,0 +1,1 @@
+$temp=fy2_sql_lookup("TABLE", "RETURN_FIELD", "ID=".$fy_rid);

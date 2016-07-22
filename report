@@ -1,0 +1,12 @@
+# Get a random number for file name
+mt_srand((double) microtime() * 1000000);
+$fy_rndnum=mt_rand(10000,99999);
+
+#filename creation
+$fy_repfile2="usr/prnreport".$fy_rndnum.".html";
+#opening the file for writing
+$fy_repfile=fopen($fy_repfile2, "w");
+
+fputs($fy_repfile, ""."\n");
+
+fclose($fy_repfile);

@@ -1,0 +1,19 @@
+
+# ----------
+# SIMPLE FORM
+
+# You need to edit these:
+$fy_sform_colspan=1;
+$fy_sform_action="URL";
+# These don't usually need to be edited unless you've got a reason.
+$fy_sform_name="form";
+$fy_sform_button_name="Submit";
+$fy_sform_returnnotecho=0;
+$fy_sform_input_name="";
+$fy_sform_append="";
+
+# This is the contents of the form.  I.e., the form elements HTML code.
+$fy_sform_contents="";
+
+fy2_form_simple($fy_sform_colspan, $fy_sform_action, $fy_sform_name, $fy_sform_button_name, $fy_sform_contents, $fy_sform_returnnotecho, $fy_sform_input_name, $fy_sform_append);
+# ----------

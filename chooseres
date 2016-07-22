@@ -1,0 +1,40 @@
+
+# ============================================================================
+# Let's make sure there is a resident selected...
+# IF NOT, force a selection...
+if ($fy_res < 1)
+{
+	fy_starthtml("Freemed-YiRC");
+	fy_startwindow($SCRIPT_NAME, $fy_window_back);
+
+	fy_winprn("CENTER","","<b>".$fy_title."<BR>Please Select Resident</b>");
+	#fy2_html_winblank();
+
+	# START FORM
+	$fy2_f_action="reslabs.php?fy_id=".$fy_id;
+	$fy2_f_name="form";
+	fy2_form($fy2_f_action, $fy2_f_name);
+
+	echo "<TR ALIGN=CENTER><TD>";
+	echo "<SELECT NAME=fy_res>";
+	if (fy_grpshowalllookup($conn, "res", $fy_id, $fydb_type, $fydb_name)=="X") {$fy_gha="";} else {$fy_gha=$fy_id;}
+	fy_conlistnames($conn, $fy_gha, "resident", "active", "", $fydb_type, $fydb_name);
+	echo "</SELECT>";
+	echo "</TD></TR>";
+
+	# FORM END
+	$fy2_fe_colspan=1;
+	$fy2_fe_button="Select";
+	fy2_form_end($fy2_fe_colspan, $fy2_fe_button);
+
+	fy2_html_winblank();
+	fy_wincancel("","grouphome.php?fy_id=$fy_id");
+
+	fy_endwindow("User: $cookie_user");
+	fy_endhtml();
+
+	exit;
+}
+# ============================================================================
+
+

@@ -1,0 +1,9 @@
+# Separating the filename into BASE is helpful for later when you may want to present a link,
+# and not have the link contain "usr/" or something...
+$fy_repfile_base="FILE";
+$fy_repfile2="usr/".$fy_repfile_base;
+$fy_repfile=fopen($fy_repfile2, "w");
+
+fputs($fy_repfile, ""."\n");
+
+fclose($fy_repfile);

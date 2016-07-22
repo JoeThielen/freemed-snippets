@@ -1,0 +1,8 @@
+# UNIV SQL INSERT/UPDATE/SMART
+$fy2_su_mode="INSERT";
+$fy2_su_table="fy_email_files";
+$fy2_su_fieldsvals="FID=".$fy_t_email_rid;
+$fy2_su_fieldsvals.="|filename=".$fy_files3[1];
+$fy2_su_fieldsvals.="|filesize=".filesize($fy_files3[0]);
+$fy2_su_smartfields="";
+fy2_sql_univ($fy2_su_mode, $fy2_su_table, $fy2_su_fieldsvals, $fy2_su_smartfields);

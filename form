@@ -1,0 +1,10 @@
+# START FORM
+$fy2_f_action="";
+$fy2_f_name="form";
+fy2_form($fy2_f_action, $fy2_f_name);
+
+
+# FORM END
+$fy2_fe_colspan=2;
+$fy2_fe_button="Submit";
+fy2_form_end($fy2_fe_colspan, $fy2_fe_button);

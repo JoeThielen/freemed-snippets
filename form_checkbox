@@ -1,0 +1,10 @@
+# FORM CHECKBOX
+$fy2_fc_title="";
+$fy2_fc_title_split=1;
+$fy2_fc_title_align="RIGHT";
+$fy2_fc_input_align="LEFT";
+$fy2_fc_name="gr_";
+$fy2_fc_value="X";
+$fy2_fc_checked="";
+$fy2_fc_append="";
+fy2_form_checkbox($fy2_fc_title, $fy2_fc_title_split, $fy2_fc_title_align, $fy2_fc_input_align, $fy2_fc_name, $fy2_fc_value, $fy2_fc_checked, $fy2_fc_append);

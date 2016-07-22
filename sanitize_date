@@ -1,0 +1,7 @@
+# $fy_date_format = Format to return as = INT, DB, or LOC 
+# $fy_date_desc = Field description, used with die()
+# $fy_date_allowblank = Set to "X" if date can be left blank
+# $fy_date_nopastorfuture = "P" to now allow past dates, "F" to not allow future dates
+# $fy_date_donotdie = Do not die() on error
+$fy_date = fy2_date_sanitize($_POST['fy_date_m'], $_POST['fy_date_d'], $_POST['fy_date_y'], $fy_date_format="INT", $fy_date_descr="", $fy_date_allowblank="", $fy_date_nopastorfuture="", $fy_date_donotdie="");
+

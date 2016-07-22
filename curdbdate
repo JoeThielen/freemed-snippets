@@ -1,0 +1,2 @@
+# This simply returns the current date in DB appropriate format.
+$fy_curdate = fy_curdbdate();

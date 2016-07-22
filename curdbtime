@@ -1,0 +1,2 @@
+# This simply returns the current time in HH:MM:SS format.
+$fy_curdbtime = fy_curdbtime();

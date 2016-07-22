@@ -1,0 +1,2 @@
+# This simply returns the current time in HH:MM format.
+$fy_curtime = fy_curtime();

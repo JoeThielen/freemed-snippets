@@ -1,0 +1,2 @@
+$fy_t_id=fy2_getfield($result_set, 0, "id");
+

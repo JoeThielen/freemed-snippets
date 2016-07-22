@@ -1,0 +1,12 @@
+# REFERENCE SELECT
+$fy_rs_table = "fy_cn_types";
+$fy_rs_value_field = "id";
+$fy_rs_display_field = "note_type";
+$fy_rs_sql_where = "";
+$fy_rs_sql_order = "note_type";
+$fy_rs_fixvalues = 0;
+$fy_rs_fdebug = 0;
+$fy_rs_sepchar_val = "";
+$fy_rs_sepchar_disp = "";
+$fy_rs_sql_group = "";
+$fy_t_opts = fy2_reference_select($fy_rs_table, $fy_rs_value_field, $fy_rs_display_field, $fy_rs_sql_where, $fy_rs_sql_order, $fy_rs_fixvalues, $fy_rs_fdebug, $fy_rs_sepchar_val, $fy_rs_sepchar_disp, $fy_rs_sql_group);

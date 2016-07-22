@@ -1,0 +1,9 @@
+# FORM SELECT
+$fy2_fs_title="";
+$fy2_fs_title_split=1;
+$fy2_fs_title_align="RIGHT";
+$fy2_fs_select_align="LEFT";
+$fy2_fs_name="gr_";
+$fy2_fs_default_value="";
+$fy2_fs_optionvals="";
+fy2_form_select($fy2_fs_title, $fy2_fs_title_split, $fy2_fs_title_align, $fy2_fs_select_align, $fy2_fs_name, $fy2_fs_default_value, $fy2_fs_optionvals);
