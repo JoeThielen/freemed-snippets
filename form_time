@@ -2,3 +2,19 @@
 echo "<tr><td align=\"right\">Start Time:</td><td align=\"left\">\n";
 fy_univ_time_input_form($conn, $fydb_type, $fydb_name, $e_stime_h, "gr_event_stime_h", $e_stime_m, "gr_event_stime_m");
 echo "</td></tr>\n";
+
+# START TIME
+if ($fy_emode=="Edit")
+{
+    $temp=fy2_getfield($result_set, $jr, "start_time");
+    $temp2=explode(":", $temp);
+    $temp_h=$temp2[0];
+    $temp_m=$temp2[1];
+} else {
+    $temp="";
+    $temp_h="";
+    $temp_m="";
+}
+echo "<tr><td align=\"right\">Start Time: </td><td>";
+fy_univ_time_input_form($conn, $fydb_type, $fydb_name, $temp_h, "gr_stime_h", $temp_m, "gr_stime_m");
+echo "</td></tr>";
