@@ -2,3 +2,21 @@
 echo "<tr><td align=\"right\">Date:</td><td align=\"left\">\n";
 fy_univ_date_input_form($conn, $fydb_type, $fydb_name, "01", "gr_date_m", "01", "gr_date_d", date("Y")-1, "", date("Y")+1, "gr_date_y","");
 echo "</td></tr>\n";
+
+# DATE
+if ($fy_emode=="Edit")
+{
+    $temp=fy2_getfield($result_set, $jr, "day");
+    $temp2=explode("/", fy_getdate($fydb_type, $temp));
+    $temp_m=$temp2[0];
+    $temp_d=$temp2[1];
+    $temp_y=$temp2[2];
+} else {
+    $temp="";
+    $temp_m="";
+    $temp_d="";
+    $temp_y="";
+}
+echo "<tr><td align=\"right\">Date:</td><td>";
+fy_univ_date_input_form($conn, $fydb_type, $fydb_name, $temp_m, "gr_date_m", $temp_d, "gr_date_d", date("Y")-1, $temp_y, date("Y")+1, "gr_date_y","");
+echo "</td></tr>";
