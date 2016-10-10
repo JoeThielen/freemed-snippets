@@ -1,0 +1,31 @@
+# ---------------------------------------
+# THIS SECTION GOES ABOVE fy_starthtml()
+# And $fy_script needs to be put in the 2nd argument of fy_starthtml()!
+
+$fy_script = "<script>
+function fy_mouseover(fy_row, fy_color)
+{
+        document.getElementById('fy_'+fy_row).style.backgroundColor='#AAAAFF';
+}
+
+function fy_mouseout(fy_row, fy_color)
+{
+                document.getElementById('fy_'+fy_row).style.backgroundColor='#'+fy_color;
+}
+</script>";
+# ---------------------------------------
+
+
+# ---------------------------------------
+# $fy_script needs to be put in the 2nd argument of fy_starthtml()!
+fy_starthtml("Freemed-YiRC", $fy_script);
+# ---------------------------------------
+
+
+# ---------------------------------------
+# When starting each table line, the following logic needs to apply.
+# THIS ASSUMES $fy_cnt IS THE COUNTER FOR THE CURRENT LOOP!
+# Each table line needs to have it's own unique number.
+if ($fy_bgcolor == 0) {$bgcolor=$bgcolor1;$fy_bgcolor=1;} else {$bgcolor=$bgcolor2;$fy_bgcolor=0;};
+fy_table .= "<tr bgcolor=\"".$bgcolor."\" id=\"fy_j".$fy_cnt."\" onmouseover=\"fy_mouseover('j".$fy_cnt."', '".$bgcolor."')\" onmouseout=\"fy_mouseout('j".$fy_cnt."','".$bgcolor."')\" onClick=\"fy_clickcolorchange(this, '".$bgcolor."', 0)\">\n";
+# ---------------------------------------
